@@ -5,14 +5,15 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "lint": "eslint src/**/*"
+    "lint": "eslint src/**/*",
+    "build" : "forge deploy",
+    "deploy" : "forge install --upgrade"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.39.0",
     "@forge/bridge": "4.5.0",
     "@forge/react": "11.1.0",
     "@forge/resolver": "1.6.9",

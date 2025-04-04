@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ForgeReconciler, { Text, Button, LoadingButton, Inline } from '@forge/react';
+import ForgeReconciler, { Text, LoadingButton, Inline } from '@forge/react';
 import { invoke } from '@forge/bridge';
 
 const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
   return (
     <>
       <Inline space="space.200">
-        <LoadingButton isLoading={loading} onClick={fetchComments}  >View Today's Updates</LoadingButton>
+        <LoadingButton isLoading={loading} onClick={fetchComments}  >View Today's Update </LoadingButton>
         <LoadingButton isLoading={loading} onClick={fetchSummary}  > Summarize </LoadingButton>
       </Inline>
      
